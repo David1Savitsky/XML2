@@ -1,0 +1,76 @@
+2021-12-26 18:27:05 INFO  [main]: Dom parsing: Laptops have been created and added to list.
+2021-12-26 18:27:05 INFO  [main]: Dom parsing: Smartphones have been created and added to list.
+2021-12-26 18:27:22 INFO  [main]: Jaxb parsing: Devices have been added to list
+2021-12-26 18:27:25 INFO  [main]: Sax parsing: Devices have been added to list
+2021-12-26 18:27:31 INFO  [main]: Sax parser has been created.
+2021-12-26 18:27:31 INFO  [main]: Sax parsing: Devices have been added to list
+2021-12-26 18:27:41 ERROR [main]: Warning: [2 : 26] - cvc-elt.1.a: Cannot find the declaration of element 'devices'.
+2021-12-26 18:27:41 FATAL [main]: Warning: [12 : 5] - The end-tag for element type "laptop" must end with a '>' delimiter.
+2021-12-26 18:27:41 ERROR [main]: File src/test/resources/invalidXml.xml is not valid.
+org.xml.sax.SAXParseException; systemId: file:///X:/Programming/Courses/XML2/src/test/resources/invalidXml.xml; lineNumber: 12; columnNumber: 5; The end-tag for element type "laptop" must end with a '>' delimiter.
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.Util.toSAXParseException(Util.java:75)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.StreamValidatorHelper.validate(StreamValidatorHelper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.ValidatorImpl.validate(ValidatorImpl.java:115)
+	at java.xml/javax.xml.validation.Validator.validate(Validator.java:124)
+	at com.epam.xmlparsing.validator.XmlValidator.isValid(XmlValidator.java:40)
+	at com.epam.xmlparsing.validator.XmlValidatorTest.testIsValidShouldReturnFalseWhenFileIsInvalid(XmlValidatorTest.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+2021-12-26 18:29:23 ERROR [main]: Warning: [2 : 26] - cvc-elt.1.a: Cannot find the declaration of element 'devices'.
+2021-12-26 18:29:23 FATAL [main]: Warning: [12 : 5] - The end-tag for element type "laptop" must end with a '>' delimiter.
+2021-12-26 18:29:23 ERROR [main]: File src/test/resources/invalidXml.xml is not valid.
+org.xml.sax.SAXParseException; systemId: file:///X:/Programming/Courses/XML2/src/test/resources/invalidXml.xml; lineNumber: 12; columnNumber: 5; The end-tag for element type "laptop" must end with a '>' delimiter.
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.Util.toSAXParseException(Util.java:75)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.StreamValidatorHelper.validate(StreamValidatorHelper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.ValidatorImpl.validate(ValidatorImpl.java:115)
+	at java.xml/javax.xml.validation.Validator.validate(Validator.java:124)
+	at com.epam.xmlparsing.validator.XmlValidator.isValid(XmlValidator.java:40)
+	at com.epam.xmlparsing.validator.XmlValidatorTest.testIsValidShouldReturnFalseWhenFileIsInvalid(XmlValidatorTest.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
