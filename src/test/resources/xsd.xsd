@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="devices"
+        xmlns:tns="devices"
+        elementFormDefault="qualified">-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/devices"
+        xmlns:tns="http://www.example.com/devices" elementFormDefault="qualified">
+
+    <element name="devices">
+        <complexType>
+            <choice maxOccurs="unbounded">
+                <element name="laptop" type="tns:Laptop"/>
+                <element name="smartphone" type="tns:SmartPhone"/>
+            </choice>
+        </complexType>
+    </element>
+    <complexType name="Device">
+        <sequence>
+            <element name="name" type="string"/>
+            <element name="port" type="tns:Port"/>
+            <element name="parameters" type="tns:Parameters"/>
+        </sequence>
+        <attribute name="id" type="positiveInteger" use="required"/>
+        <attribute name="producer" type="tns:Producer"/>
+    </complexType>
+    <simpleType name="Producer">
+        <restriction base="string">
+            <pattern value="[A-Z][A-Za-z ]*"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="Port">
+        <restriction base="string">
+            <enumeration value="COM"/>
+            <enumeration value="USB"/>
+            <enumeration value="LPT"/>
+        </restriction>
+    </simpleType>
+    <complexType name="Parameters">
+        <sequence>
+            <element name="isSensory" type="boolean"/>
+            <element name="batteryVolume" type="positiveInteger"/>
+        </sequence>
+    </complexType>
+    <complexType name="Laptop">
+        <complexContent>
+            <extension base="tns:Device">
+                <sequence>
+                    <element name="graphicsCard" type="string"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <complexType name="SmartPhone">
+        <complexContent>
+            <extension base="tns:Device">
+                <sequence>
+                    <element name="screenDiameter" type="decimal"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+</schema>

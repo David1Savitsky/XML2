@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<devices xmlns="devices">-->
+<devices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.example.com/devices"
+      xsi:schemaLocation="http://www.example.com/devices xsd.xsd">
+    <laptop id="1">
+        <name>Lenovo</name>
+        <port>COM</port>
+        <parameters>
+            <isSensory>true</isSensory>
+            <batteryVolume>1200</batteryVolume>
+        </parameters>
+        <graphicsCard>nvidia</graphicsCard>
+    </laptop>
+    <smartphone id="2">
+        <name>Samsung</name>
+        <port>USB</port>
+        <parameters>
+            <isSensory>false</isSensory>
+            <batteryVolume>560</batteryVolume>
+        </parameters>
+        <screenDiameter>4.2</screenDiameter>
+    </smartphone>
+    <laptop id="3" producer="USA">
+        <name>Apple</name>
+        <port>LPT</port>
+        <parameters>
+            <isSensory>true</isSensory>
+            <batteryVolume>1300</batteryVolume>
+        </parameters>
+        <graphicsCard>ATI</graphicsCard>
+    </laptop>
+    <smartphone id="4" producer="China">
+        <name>Xiaomi</name>
+        <port>USB</port>
+        <parameters>
+            <isSensory>true</isSensory>
+            <batteryVolume>5000</batteryVolume>
+        </parameters>
+        <screenDiameter>5.6</screenDiameter>
+    </smartphone>
+</devices>
